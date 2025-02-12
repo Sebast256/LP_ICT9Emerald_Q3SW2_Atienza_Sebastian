@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<style>
+		body{
+		 padding-top: 70px;
+         background-image: url('/Users/carolbustamante-atienza/Desktop/untitled folder/istockphoto-1805528558-612x612.jpg');
+         background-size: cover;
+         background-repeat:  no-repeat;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<img src="/Users/carolbustamante-atienza/Desktop/untitled folder/3d-render-of-a-robot-holding-a-calculator-FCEMA4.jpg" alt="robot holding calculator" width="150px" height="150px" >
+	<img src="/Users/carolbustamante-atienza/Desktop/untitled folder/71qSXM4P00L.jpg" alt="calculator" width="150px" height="150px" >
+    <img src="/Users/carolbustamante-atienza/Desktop/untitled folder/calculator-gdc0b8a6a8_1920.jpg" alt="calculator" width="150px" height="150px" >
+	<div id="Hi">
+	<p>Hi, let see if you can put your math skills to the test!</p>
+	<style>
+		#Hi{
+			background-color: #0307fc;
+			color: #03cefc;
+		}
+	</style>
+
+	<div class="container">
+
+	<details ontoggle ="message()">
+	<summary> Instructions </summary>
+	<i> Enter two numbers and finds its sum, difference, product, and quotient. </i>	
+    </details>
+
+    <form>
+		<label> Enter 1st Number </label>
+		<input type="number" id="a" placeholder=" type here... ">
+
+	<br>
+
+	    <label> Enter 2nd Number </label>
+		<input type="number" id="b" placeholder=" type here... ">
+
+	<br>
+
+	<button type="button" onclick = "plus()"> Calculate for Addition </button>
+	<button type="button" onclick = "minus()"> Calculate for Subtraction </button>
+	<button type="button" onclick = "multiply()"> Calculate for Multiplication </button>
+	<button type="button" onclick = "quotient()"> Calculate for Division</button>
+    <h1 id="Result"> RESULT </h1>
+    <h1 id="res"> RESULT</h1>
+    <h1 id="ans"> RESULT</h1>	
+    <h1 id="Answer"> RESULT</h1>
+
+    </form>
+
+	</div>
+
+    <script>
+     function message(){
+  alert("Try it");	
+     }
+
+     function plus() {
+
+          var add1 = document.getElementById ("a").value
+          var add2 = document.getElementById ("b").value
+          var sum = Number(add1) + Number(add2);
+          
+          document.getElementById('Result').innerHTML = 'Answer is' + ' ' + sum;
+
+     }
+
+     function minus() {
+
+          var minus1 = document.getElementById ("a").value
+          var minus2 = document.getElementById ("b").value
+          var ans = Number(minus1) - Number(minus2);
+          
+          document.getElementById('res').innerHTML = 'Answer is' + ' ' +  ans;
+
+     }
+
+     function multiply() {
+
+          var product1 = document.getElementById ("a").value
+          var product2 = document.getElementById ("b").value
+          var answer = Number(product1) * Number(product2);
+          
+          document.getElementById('ans').innerHTML = 'Answer is' + ' ' +  answer;
+
+     }
+
+     function quotient() {
+
+          var dividend1 = document.getElementById ("a").value
+          var dividend2 = document.getElementById ("b").value
+          var response = Number(dividend1) / Number(dividend2);
+          
+          document.getElementById('Answer').innerHTML = 'Answer is' + ' ' +  response;
+
+     }
+
+
+	
+	
+
+    </script>
+
+  		
+
+</body>
+</html>
